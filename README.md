@@ -9,3 +9,5 @@ that can be reused and shared
 (mainly) across services while we
 can still work with all our 
 code as if it was a single codebase.
+
+See `Makefile` for install instructions.

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "api"
+version = "0.1.0"
+description = ""
+authors = []
+license = ""
+
+packages = [
+    {include = "streamx/api", from = "../../bases"},
+    {include = "streamx/manage_channels", from = "../../components"},
+    {include = "streamx/schemas", from = "../../components"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+pydantic = "^1.10.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

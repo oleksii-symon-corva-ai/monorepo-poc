@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "streamx"
+description = ""
+authors = []
+version = "0.1.0"
+packages = [
+    {include = "development"},
+    {include = "streamx/api", from = "bases"},
+    {include = "streamx/manage_channels", from = "components"},
+    {include = "streamx/schemas", from = "components"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.95.0"
+uvicorn = "^0.21.1"
+pydantic = "^1.10.7"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.0"
+mypy = "^1.2.0"
+black = "^23.3.0"
+httpx = "^0.23.3"
+
+[tool.mypy]
+mypy_path = ["components", "bases"]
+namespace_packages = true
+explicit_package_bases = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
