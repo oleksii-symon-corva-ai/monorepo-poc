@@ -3,7 +3,9 @@
 StreamX monorepo example uses
 [**polylith architecture**](https://polylith.gitbook.io/polylith/)
 which is a software architecture 
-that decouples the backend code 
+that applies functional thinking 
+at the system scale.
+It decouples the backend code 
 into reusable ”LEGO bricks” 
 that can be reused and shared 
 (mainly) across services while we
