@@ -10,4 +10,12 @@ that can be reused and shared
 can still work with all our 
 code as if it was a single codebase.
 
-See `Makefile` for install instructions.
+The project uses 
+[Poetry](https://python-poetry.org/) 
+with 
+[Multiproject](https://github.com/DavidVujic/poetry-multiproject-plugin)
+and
+[Polylith](https://davidvujic.github.io/python-polylith-docs/)
+plugins.
+
+See `Makefile` for install and usage instructions.
